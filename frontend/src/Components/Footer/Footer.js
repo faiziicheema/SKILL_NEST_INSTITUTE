@@ -59,7 +59,11 @@ const Footer = () => {
 
   return (
     <div className="footerMain">
-      <div className="footerMainImg" />
+      <motion.div
+          initial={{ y: 100 }}
+        whileInView={{ y: 0 }}
+        transition={{ duration: 1 }}  
+  className="footerMainImg" />
       <div className="footerContent row">
         <div className="row">
           <div className="col-md-6 colsFooter ">
